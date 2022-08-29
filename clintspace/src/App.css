@@ -138,9 +138,23 @@ body::-webkit-scrollbar {
     font-size: 16px;
     font-weight: 500;
     padding: 0.4rem 0.7rem;
-    border: 1px solid black;
-    border-radius: 8px;
-    background-color: transparent;
+
+    border: 2px solid;
+
+    background-image: linear-gradient(rgba(160, 23, 138, 1), rgba(160, 23, 138, 1)), 
+  linear-gradient(0deg, #0021BA,rgba(160, 23, 138, 1));
+
+
+  
+  /* filter: drop-shadow(10px 26px 56px rgba(34, 13, 68, 0.15)); */
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  border-radius: 500px;
+  box-shadow: 2px 1000px 1px #fff inset;
+    /* border: 2px solid rgba(160, 23, 138, 1); */
+    color: rgba(160, 23, 138, 1);
+    border-radius: 50px;
+    /* background-color: transparent; */
     align-items: center;
     z-index: 999;
 }
@@ -1331,6 +1345,7 @@ div.overlay {
     width: 100%;
     /* height: 484px; */
     background: url('./assets/footer_image.png'), linear-gradient(180deg, #A0178A 0%, #030F46 85%);
+    background-size: cover;
     mix-blend-mode: multiply;
 }
 
@@ -1341,6 +1356,12 @@ div.overlay {
     font-weight: 400;
     font-size: 16px;
     align-items: flex-start;
+}
+
+.top-section{
+    border-bottom: 1px solid white;
+    padding-bottom: 3%;
+   
 }
 
 .footer ul li {
@@ -1355,6 +1376,7 @@ div.overlay {
     gap: 1rem;
     align-items: center;
     margin-bottom: 5%;
+    margin-left: 5%;
 }
 
 .footerImageGrid {
@@ -1415,3 +1437,37 @@ div.overlay {
         flex-direction: column;
     }
 }
+
+.btn-chat{
+    background-color:rgba(160, 23, 138, 1) !important;
+}
+.top-section > li{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: start; */
+    text-align: start;
+   
+}
+.bottom-section{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:100%;
+    width: 100%;
+    margin-top: 25px;
+   margin-left: 10px;
+  
+    box-sizing: border-box;
+}
+.bottom-section img{
+   
+    
+    z-index:1;
+    
+
+}
+.footer-jump-button{
+    margin-right: 30px;
+}
+

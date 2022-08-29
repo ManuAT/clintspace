@@ -1,5 +1,5 @@
 export const OUR_STORY_PARAGRAPH = (
-  <p>
+  <p style={{fontFamily:'Lato',fontStyle: "normal",fontWeight: 400,fontSize: 18,lineHeight: '140%' }}>
     Inspired by industry experience, we decided to launch our own digital agency
     called Clint Space in 2022, focusing on creativity, customer service, and
     results... Based on Clint Space, we started designing social media creatives

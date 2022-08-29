@@ -7,8 +7,13 @@ function IntroComponent() {
     return (
         <div className="intro" id='Home'>
             <div className="introText">
-                <h2>
-                    <span>   We are </span> <span>  Creative agency</span>
+                <h2 style={{
+                    fontFamily:"Catamaran",
+                    fontWeight: 600,
+                    fontSize: 56,
+                    fontStyle: "normal"
+                    }}>
+                    <span>   We are </span> <span>  Creative Agency</span>
                 </h2>
                 {INTRO_PARAGRAPH}
                 <div className="inputGroup">

@@ -18,10 +18,25 @@ function Testmonials() {
                 <img src={item.image} alt="" />
             </div>
 
-            <h4> {item.name} </h4>
-            <p style={{ fontSize: "16px" }} > {item.company} </p>
+            <h4 style={{
+                    fontFamily:"Catamaran",
+                    fontWeight: 600,
+                    fontSize: 22,
+                    fontStyle: "normal"
+                    }}> {item.name} </h4>
+            <p style={{
+                    fontFamily:"Lato",
+                    fontWeight: 400,
+                    fontSize: 18,
+                    fontStyle: "normal"
+                    }} > {item.company} </p>
             <hr />
-            <p> {item.testimonial} </p>
+            <p style={{
+                    fontFamily:"Lato",
+                    fontWeight: 400,
+                    fontSize: 18,
+                    fontStyle: "normal"
+                    }}> {item.testimonial} </p>
 
         </div>
 
@@ -39,8 +54,8 @@ function Testmonials() {
 
             {
                 <div className="buttonRow bottomButtonRow">
-                    <button onClick={() => scroll(300)}> {LEFT_ICON}  </button>
-                    <button onClick={() => scroll(-300)} > {RIGHT_ICON} </button>
+                    <button onClick={() => scroll(-300)}> {LEFT_ICON}  </button>
+                    <button onClick={() => scroll(300)} > {RIGHT_ICON} </button>
                 </div>
 
             }

@@ -1,3 +1,3 @@
-export const  INTRO_PARAGRAPH = <p>
+export const  INTRO_PARAGRAPH = <p style={{fontFamily:'Lato',fontStyle: "normal",fontWeight: 400,fontSize: 18,lineHeight: '140%' }}>
     Our goal is to help organizations in a simple and profound way to reflect their own core values through all possible aspects of communication...
 </p>

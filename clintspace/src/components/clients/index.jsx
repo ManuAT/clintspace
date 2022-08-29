@@ -15,8 +15,13 @@ function Clients({ smallScreen }) {
     const makeTeamCard = (detailsArray) => (detailsArray || []).map((item, i) => <a href={item.link}>
         <div className="clientCard" id={item?.id} key={i} >
             <div className="clientCardImageRow">  <img src={item.image} alt="" /></div>
-            <hr style={{ width: "80%", margin: "20px auto§" }} />
-            <p> {item.name} </p>
+            <hr style={{ width: "80", margin: "20px auto§" }} />
+            <p style={{
+                    fontFamily:"Catamaran",
+                    fontWeight: 600,
+                    fontSize: 22,
+                    fontStyle: "normal"
+                    }}> {item.name} </p>
         </div>
     </a>)
 
@@ -42,8 +47,18 @@ function Clients({ smallScreen }) {
 
                 <div className="rightClient">
                     <div className="" >
-                        <h2> Happy Customers </h2>
-                        <p> {CLIENT_PARAGRAPH}  </p>
+                        <h2 style={{
+                    fontFamily:"Catamaran",
+                    fontWeight: 600,
+                    fontSize: 44,
+                    fontStyle: "normal"
+                    }}> Our Clients </h2>
+                        <p style={{
+                    fontFamily:"Lato",
+                    fontWeight: 400,
+                    fontSize: 18,
+                    fontStyle: "normal"
+                    }}> {CLIENT_PARAGRAPH}  </p>
                     </div>
                     {
                         smallScreen && <div className="buttonRow">

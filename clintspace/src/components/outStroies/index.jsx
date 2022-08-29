@@ -9,7 +9,12 @@ const Index = () => {
           <img src="./RocketImge.png" alt="" />
         </div>
         <div className="textRow col">
-          <h2 className="text-hero"> Our Stories </h2>
+          <h2 className="text-hero" style={{
+                    fontFamily:"Catamaran",
+                    fontWeight: 600,
+                    fontSize: 44,
+                    fontStyle: "normal"
+                    }}> Our Story </h2>
           {OUR_STORY_PARAGRAPH}
         </div>
 

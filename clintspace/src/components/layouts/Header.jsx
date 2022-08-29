@@ -33,7 +33,10 @@ function Header() {
             activeClassName="selected"
             to={item.componentId}
             activeStyle={{ color: "red" }}
-            onClick={() => { setComponentId(item.componentId); setShowMenu(false) }}
+            onClick={() => { 
+              setComponentId(item.componentId);
+              // setShowMenu(false) s
+            }}
           >
             {item.icon} {item.componentName}
           </HashLink>
@@ -55,7 +58,12 @@ function Header() {
         <ul>{getNavItem()}</ul>
         <span className="chatButton">
           <button>
-            <RiChat1Line /> Chat Now!
+            <HashLink
+            to={"#contact"}
+            >
+              Chat Now! <RiChat1Line /> 
+            </HashLink>
+            
           </button>
         </span>
       </span>
