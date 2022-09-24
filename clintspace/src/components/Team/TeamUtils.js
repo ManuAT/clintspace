@@ -40,7 +40,7 @@ export const TEAM_MEMBERS_DETAILS = [
     {
         name: "Savant Mariah",
         positoin: "Project Coordinator",
-        image: "./employImage.png",
+        image: "./Team/employImage.png",
         socialMediaLink: "",
         socailMediaIcon: <IoLogoInstagram />
     },
